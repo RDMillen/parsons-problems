@@ -8,15 +8,8 @@ title: Multiple Parson's Problems on One Page
 # Parsons Practice
 
 ## Parsons 1 (Line Based Grader)
-Re-arrange the blocks below so they print out "Hello World!"
+Re-arrange the blocks below so they print out a greeting!
 
-<div id="p1-sortableTrash" class="sortable-code"></div>
-<div id="p1-sortable" class="sortable-code"></div>
-<div style="clear:both;"></div>
-<p>
-    <input id="p1-feedbackLink" value="Get Feedback" type="button" />
-    <input id="p1-newInstanceLink" value="Reset Problem" type="button" />
-</p>
 <div id="sortableTrash" class="sortable-code"></div> 
 <div id="sortable" class="sortable-code"></div> 
 <div style="clear:both;"></div> 
@@ -26,9 +19,9 @@ Re-arrange the blocks below so they print out "Hello World!"
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "name = &quot;Ross&quot;\n" +
-    "age = 3000\n" +
-    "print(name + age)";
+  var initial = "print(&quot;Hello There!&quot;)\n" +
+    "name = input(&quot;What is your name? &quot;\n" +
+    "print(&quot;Good to meet you &quot;, name, &quot;!&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
