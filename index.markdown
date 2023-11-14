@@ -20,7 +20,7 @@ Re-arrange the blocks below so they print out a greeting!
 <script type="text/javascript"> 
 (function(){
   var initial = "print(&quot;Hello There!&quot;)\n" +
-    "name = input(&quot;What is your name? &quot;\n" +
+    "name = input(&quot;What is your name? &quot;)\n" +
     "print(&quot;Good to meet you &quot;, name, &quot;!&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
