@@ -143,7 +143,7 @@ Draw a square using Python Turtle, the "LOOP" block can be adjusted.
 (function(){
   var initial = "for i in range(0,$$toggle::2::3::4::$$):\n" +
     "	turtle.fd(50)\n" +
-    "	turtle.rt(90)";
+    "    turtle.rt(90)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "Q4-sortable",
     "max_wrong_lines": 10,
@@ -153,10 +153,9 @@ Draw a square using Python Turtle, the "LOOP" block can be adjusted.
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "Q4-sortableTrash",
-    "executable_code": "for i in range(0,$$toggle::2::3::4::$$):\n\tmyTurtle.fd(50)\n\tmyTurtle.rt(90)",
+    "executable_code": "for i in range(0,$$toggle::2::3::4::$$):\n myTurtle.fd(50)\n myTurtle.rt(90)",
     "programmingLang": "pseudo",
-    "turtleModelCode": "for i in range(0,4):\n\tmodelTurtle.fd(50)\n\tmodelTurtle.rt(90)"
+    "turtleModelCode": "for i in range(0,4):\n modelTurtle.fd(50)\n modelTurtle.rt(90)"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
