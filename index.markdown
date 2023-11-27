@@ -141,7 +141,7 @@ Draw a square using Python Turtle, the "LOOP" block can be adjusted.
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "LOOP $$toggle::2::3::4::$$\n" +
+  var initial = "for i in range(0,$$toggle::2::3::4::$$):\n" +
     "	turtle.fd(50)\n" +
     "	turtle.rt(90)";
   var parsonsPuzzle = new ParsonsWidget({
@@ -171,7 +171,6 @@ Draw a square using Python Turtle, the "LOOP" block can be adjusted.
 })(); 
 </script>
 
-
 ## Problem 5 - Countdown While Loop
 Create a countdown from 10 to 0, followed by "Blast Off!"
 
@@ -192,21 +191,13 @@ Create a countdown from 10 to 0, followed by "Blast Off!"
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "Q5-sortable",
     "max_wrong_lines": 10,
-    "grader": ParsonsWidget._graders.VariableCheckGrader,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "Q5-sortableTrash",
-    "vartests": [
-        {
-            "message": "",
-            "initcode": "",
-            "code": "",
-            "variables": {}
-        }
-    ]
+    "trashId": "Q5-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
