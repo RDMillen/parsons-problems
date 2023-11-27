@@ -19,8 +19,8 @@ Re-arrange the blocks below so they print out a greeting!
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "name = input(&quot;Hello, what is your name? &quot;)\n" +
-    "print(&quot;Nice to meet you &quot;, name, &quot;!&quot;) ";
+  var initial = "name = input(&quot;Hello, what is your name?&quot;)\n" +
+    "print(&quot;Nice to meet you &quot;, name, &quot;!&quot;)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "Q1-sortable",
     "max_wrong_lines": 10,
@@ -29,8 +29,7 @@ Re-arrange the blocks below so they print out a greeting!
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "trashId": "Q1-sortableTrash"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
@@ -72,7 +71,6 @@ Construct a question for a quiz that checks the answer using an if statement.
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "Q2-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
@@ -114,7 +112,6 @@ Create a quesion that allows multiple different answers.
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "Q3-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
@@ -196,7 +193,6 @@ Create a countdown from 10 to 0, followed by "Blast Off!"
     "x_indent": 50,
     "lang": "en",
     "show_feedback": true,
-    "trashId": "Q5-sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
