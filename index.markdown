@@ -130,7 +130,7 @@ Create a quesion that allows multiple different answers.
 </script>
 
 ## Problem 4 - Python Turtle
-Print out "I am a Java program" three times using a for loop.
+Draw a square using Python Turtle, the "LOOP" block can be adjusted.
 
 <div id="Q4-sortableTrash" class="sortable-code"></div> 
 <div id="Q4-sortable" class="sortable-code"></div> 
