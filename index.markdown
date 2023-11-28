@@ -126,8 +126,8 @@ Create a quesion that allows multiple different answers.
 })(); 
 </script>
 
-## Problem 4 - Python Turtle
-Draw a square using Python Turtle, the "LOOP" block can be adjusted.
+## Problem 4 - Multiplication
+Arrange the code to multiply to numbers together and output the result.
 
 <div id="Q4-sortableTrash" class="sortable-code"></div> 
 <div id="Q4-sortable" class="sortable-code"></div> 
@@ -138,21 +138,19 @@ Draw a square using Python Turtle, the "LOOP" block can be adjusted.
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "for i in range(0,$$toggle::2::3::4::$$):\n" +
-    "	turtle.fd(50)\n" +
-    "    turtle.rt(90)";
+  var initial = "num1 = int(input(&quot;Enter a number: &quot;))\n" +
+    "num2 = int(input(&quot;Enter another number: &quot;))\n" +
+    "result = num1 * num2\n" +
+    "print(num1, &quot; multiplied by &quot;, num2, &quot; equals: &quot;, result)";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "Q4-sortable",
     "max_wrong_lines": 10,
-    "grader": ParsonsWidget._graders.TurtleGrader,
+    "grader": ParsonsWidget._graders.LineBasedGrader,
     "exec_limit": 2500,
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true,
-    "executable_code": "for i in range(0,$$toggle::2::3::4::$$):\n myTurtle.fd(50)\n myTurtle.rt(90)",
-    "programmingLang": "pseudo",
-    "turtleModelCode": "for i in range(0,4):\n modelTurtle.fd(50)\n modelTurtle.rt(90)"
+    "show_feedback": true
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
